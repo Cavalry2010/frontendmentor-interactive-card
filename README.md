@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-and-interactive-card-details-form-using-js-GapnSV8x8B)
 - Live Site URL: [Interactive Card Details Form](https://interactive-card-alejandro.netlify.app)
 
 ## My process
