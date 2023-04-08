@@ -1,0 +1,71 @@
+@media (max-width: 26em) {
+  body {
+    background-image: url("../images/bg-main-mobile.png");
+    background-size: auto;
+    background-position: top;
+  }
+
+  .register-cc-box {
+    grid-template-columns: 1fr;
+    max-width: 35rem;
+    column-gap: 0;
+  }
+
+  .cc-image-front-box {
+    width: 29.05rem;
+    height: 15.92rem;
+    margin: 0;
+    padding: 2rem;
+    transform: translate(0.2rem, 10rem);
+    border-radius: 5px;
+  }
+
+  .cc-image-logo {
+    width: 25%;
+  }
+
+  .cc-image-number {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-top: 3.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .cc-image-name {
+    font-size: 0.8rem;
+  }
+
+  .cc-expire-date {
+    font-size: 0.8rem;
+  }
+
+  .cc-image-back-box {
+    width: 29.05rem;
+    height: 15.92rem;
+    margin: 0;
+    transform: translate(5.7rem, -15rem);
+    z-index: -1;
+  }
+
+  .cc-image-cvc {
+    font-size: 0.8rem;
+  }
+
+  .cc-register-form-box {
+    padding: 0 1rem;
+    min-width: 35rem;
+    min-height: 30rem;
+  }
+
+  .cc-register-form {
+    width: 100%;
+  }
+
+  .exp-date-and-cvc-box {
+    gap: 1rem;
+  }
+
+  .exp-date-and-cvc-box div div {
+    gap: 0.8rem;
+  }
+}

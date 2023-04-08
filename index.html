@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <script defer src="./js/script.js"></script>
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">Credit Card Registration Form</h1>
+      <div class="container align-center">
+        <div class="register-cc-box">
+          <div class="cc-image-box">
+            <div class="cc-image-front-box">
+              <img
+                class="cc-image-logo"
+                src="./images/card-logo.svg"
+                alt="Credit Card Logo"
+              />
+              <p class="cc-image-number" data-input="cc-number">
+                0000 0000 0000 0000
+              </p>
+              <div>
+                <p class="cc-image-name" data-input="full-name">
+                  Jane Appleseed
+                </p>
+                <p class="cc-expire-date">
+                  <span class="cc-expire-month" data-input="expire-month"
+                    >00</span
+                  >/<span class="cc-expire-year" data-input="expire-year"
+                    >00</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="cc-image-back-box">
+              <p class="cc-image-cvc" data-input="cc-cvc">000</p>
+            </div>
+          </div>
+          <div class="cc-register-form-box">
+            <form class="cc-register-form" name="cc-register-form">
+              <div>
+                <label for="full-name" class="form-label"
+                  >Cardholder Name</label
+                >
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="e.g. Jane Appleseed"
+                  name="full-name"
+                  required
+                  aria-describedby="full-name-alert"
+                />
+                <p
+                  id="full-name-alert"
+                  class="form-message full-name-message"
+                  aria-live="polite"
+                ></p>
+              </div>
+              <div>
+                <label for="cc-number" class="form-label">Card Number</label>
+                <input
+                  id="cc-number"
+                  type="text"
+                  placeholder="e.g. 1234 5678 9123 0000"
+                  name="cc-number"
+                  required
+                  aria-describedby="cc-number-alert"
+                />
+                <p
+                  id="cc-number-alert"
+                  class="form-message cc-number-message"
+                  aria-live="polite"
+                ></p>
+              </div>
+              <div class="exp-date-and-cvc-box">
+                <div id="expire-date">
+                  <label for="expire-date" class="form-label"
+                    >Exp. Date (MM/YY)</label
+                  >
+                  <label for="expire-month" class="sr-only">Expire Month</label>
+                  <input
+                    id="expire-month"
+                    type="number"
+                    placeholder="MM"
+                    name="expire-month"
+                    required
+                    aria-describedby="expire-date-alert"
+                  />
+                  <label for="expire-year" class="sr-only">Expire Year</label>
+                  <input
+                    id="expire-year"
+                    type="number"
+                    placeholder="YY"
+                    name="expire-year"
+                    required
+                    aria-describedby="expire-date-alert"
+                  />
+
+                  <p
+                    id="expire-date-alert"
+                    class="form-message expire-date-message"
+                    aria-live="polite"
+                  ></p>
+                </div>
+                <div>
+                  <label for="cc-cvc" class="form-label">Cvc</label>
+                  <input
+                    id="cc-cvc"
+                    type="number"
+                    placeholder="e.g. 123"
+                    name="cc-cvc"
+                    required
+                    aria-describedby=""
+                  />
+                  <p
+                    id="cc-cvc-alert"
+                    class="form-message cc-cvc-message"
+                    aria-live="polite"
+                  ></p>
+                </div>
+              </div>
+              <button class="submit-btn" type="submit">Confirm</button>
+            </form>
+
+            <!-- Completed state -->
+
+            <!-- <img
+              class="success-img"
+              src="./images/icon-complete.svg"
+              alt="Completed"
+            />
+            <p class="completed-ty">Thank you!</p>
+            <p class="completed-message">We've added your card details</p>
+            <a href="#" class="continue-btn">Continue</a> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alejandro Perdomo</a>.
+      </div>
+    </footer>
+  </body>
+</html>
